@@ -1,0 +1,45 @@
+.page { min-height: 100vh; background: #f7f7fb; color: #1a1a2e; padding: 16px; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+.wrap { max-width: 1100px; margin: 0 auto; }
+
+.head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.titulo { margin: 0 0 4px; font-size: 14px; font-weight: 500; color: #8a8a99; }
+.totalAnio { font-size: 28px; font-weight: 700; }
+
+.anios { display: flex; gap: 6px; flex-wrap: wrap; }
+.anio { padding: 6px 14px; border-radius: 999px; border: 1px solid #e5e5ee; background: #fff; color: #1a1a2e; text-decoration: none; font-size: 14px; }
+.anioActivo { background: #4E79A7; border-color: #4E79A7; color: #fff; }
+
+.card { background: #fff; border: 1px solid #e5e5ee; border-radius: 12px; overflow: hidden; }
+.scroll { overflow-x: auto; }
+
+.tabla { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.tabla th, .tabla td { padding: 10px 12px; border-bottom: 1px solid #e5e5ee; white-space: nowrap; text-align: right; }
+.tabla thead th { font-size: 12px; font-weight: 500; color: #8a8a99; text-transform: capitalize; background: #fff; }
+.tabla thead .mesActual { color: #4E79A7; font-weight: 700; }
+.tabla .futuro { color: #8a8a99; font-style: italic; }
+
+.cat { text-align: left !important; position: sticky; left: 0; z-index: 1; background: #fff; font-weight: 500; border-right: 1px solid #e5e5ee; }
+.vacio { color: #c5c5d0; }
+.totalCol { font-weight: 600; background: #fafafc; }
+
+.tabla tfoot th, .tabla tfoot td { background: #f0f4f9; font-weight: 600; border-bottom: none; }
+.tabla tfoot .cat { background: #f0f4f9; }
+
+.sinDatos { padding: 32px; text-align: center; color: #8a8a99; }
+
+@media (max-width: 600px) {
+  .tabla th, .tabla td { padding: 8px; font-size: 13px; }
+  .totalAnio { font-size: 24px; }
+}
+
+.acciones { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.salir { padding: 6px 14px; border-radius: 999px; border: 1px solid #e5e5ee; background: #fff; color: #8a8a99; font-size: 14px; cursor: pointer; }
+.salir:hover { color: #1a1a2e; border-color: #c5c5d0; }
+.cuenta { margin-top: 4px; font-size: 12px; color: #8a8a99; }
+
+.cardGrafico { padding: 16px; margin-bottom: 16px; overflow: visible; }
+.subtitulo { margin: 0 0 8px; font-size: 14px; font-weight: 500; color: #8a8a99; }
+.leyenda { margin: 8px 0 0; font-size: 12px; color: #8a8a99; }
+
+.skel { background: linear-gradient(90deg, #eceef3 25%, #f6f7fa 37%, #eceef3 63%); background-size: 400% 100%; animation: brillo 1.4s ease infinite; border-radius: 6px; }
+@keyframes brillo { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
